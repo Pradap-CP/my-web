@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?familu=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fff);
+    color: #333;
+    padding: 50px;
+}
+
+.main-container {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, skyblue, white);
+    margin: 20px;
+    border: 5px solid #ddd;
+    border-radius: 15px;
+}
+
+.logo {
+    color: white;
+    padding-right: 35rem;
+    text-shadow: 0 0 10px black;
+}
+
+.link a {
+    margin-left: 30px;
+    border: 2px solid skyblue;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    background: white;
+    text-decoration: none;
+    font-weight: bolder;
+    color: skyblue;
+    transition: 0.3s linear;
+}
+
+.link {
+    text-align: right;
+}
+
+.link a:hover {
+    background: black;
+    color: white;
+    border: 3px solid skyblue;
+    border-radius: 8px;
+    transition: 0.3s linear;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.head{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00509e;
+}
+
+.intro {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill h3 {
+    margin-bottom: 8px;
+    color: #003f88;
+}
+
+.skill-bar {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.bar {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    border-radius: 10px;
+    animation: fillBar 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.bar.html {
+    width: 0;
+    background-color: #ff5722;
+}
+
+.bar .css {
+    width: 0;
+    background-color: #3f51b5;
+}
+
+.bar .js {
+    width: 0;
+    background-color: #ffc107;
+}
+
+@keyframes fillbar {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animate the width separately */
+
+.bar .html {
+    animation: fillHTML 2s forwards ease-in-out;
+}
+
+.bar .css {
+    animation: fillCSS 2s 0.5s forwards ease-in-out;
+}
+
+.bar .js {
+    animation: fillJS 2s 1s forwards ease-in-out;
+}
+
+@keyframes fillHTML {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes fillCSS {
+    to {
+        widht: 80%;
+    }
+}
+
+@keyframes fillJS {
+    to {
+        widht: 70%;
+    }
+}

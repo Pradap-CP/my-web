@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?familu=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.content {
+    color: white;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.5s linear;
+}
+
+.links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(237, 73, 55);
+    transition: 0.5s linear
+}
+
+.links a:hover::before{
+    width: 100%;
+}
+
+.links a:hover {
+    color: rgb(255, 98, 0);
+}
+
+.my-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(218, 185, 218), white);
+}
+
+
+.my-pick h1 {
+    font-size: 3rem;
+    align-items: center;
+}
+
+.my-pick img{
+    width: 300px;
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0 10px 9px black;
+}
+
+.my-pick h1 {
+    padding: 5px;
+     background: rgb(244, 240, 240);
+     color: black;
+     margin: 15px;
+     border-radius: 7px;
+     box-shadow: 0 3px 6px black;
+}
+
+.my-pick p {
+    margin: 5px;
+    font-style:oblique;
+    font-weight: bold;
+    color: rgb(19, 169, 77);
+}
+
+
+.about h1{
+    margin: 4rem;
+    height: 3rem;
+    width: 40rem;
+    margin-left: 28rem;
+    text-align: center;
+    background: white;
+    padding-top: 0.5rem;
+    border: 3px solid black;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+}
+
+.about .pro{
+    margin-left: 45%;
+    height: 3rem;
+    width: 10rem;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 0.9rem;
+    border-radius: 12px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px black;
+    font-weight: bolder;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 4rem;
+}
+
+.card{
+    background: white;
+    border: 2px solid rgb(118, 115, 115);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px black;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 10px 20px black;
+}
+
+.mine {
+    background-color: black;
+    padding: 5rem;
+    color: white;
+}
+
+.mine h1 {
+    text-align: center;
+    margin: 4rem;
+    text-shadow: 0 0 6px white;
+}
+
+
+.mine p {
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
